@@ -1,3 +1,16 @@
+
+#Project: Resume
+##Javascript Basics course - Front-End Nanodegree - Udacity
+
+Browser view
+![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img1.png)
+
+Nexus 5X view
+![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img2.png)
+
+##About this project - Udacity Info
+## How do I complete this project?
+
 ## How do I complete this project?
 
 1. Go to the [Javascript Basics course](https://www.udacity.com/course/ud804) and select "View Course Materials."
