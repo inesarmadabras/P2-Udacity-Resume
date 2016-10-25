@@ -3,9 +3,11 @@
 ##Javascript Basics course - Front-End Nanodegree - Udacity
 
 Browser view
+
 ![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img1.png)
 
 Nexus 5X view
+
 ![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img2.png)
 
 ##About this project - Udacity Info
