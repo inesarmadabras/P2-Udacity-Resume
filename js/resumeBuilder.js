@@ -1,283 +1,243 @@
+//NEED HELP at line 197 :)
 var bio = {
     "name": "Inês Armada Brás",
     "role": "Web - Designer",
     "contacts": {
-        "mobile":  "+351 963292070" ,
+        "mobile": "+351 963292070",
         "email": "ines.armada.bras@gmail.com",
-        "github":"inesarmadabras",
-        "twitter":"@InesArmadaBras",
-        "location":"Lisbon, Portugal"
+        "github": "inesarmadabras",
+        "twitter": "@InesArmadaBras",
+        "location": "Lisbon, Portugal"
     },
-    "welcomeMessage":"This website was made for the Front-End Web Developer Nanodegree from Udacity. Check my real website @ http://inesarmadabras.6te.net",
+    "welcomeMessage": "This website was made for the Front-End Web Developer Nanodegree from Udacity. Check my real website @ http://inesarmadabras.6te.net",
     "biopic": "images\\ines.png",
-    "skills":["HTML5", "CSS","Javascript","SQL+PHP","Java", "Python", "Android"]
+    "skills": ["HTML5", "CSS", "Javascript", "SQL+PHP", "Java", "Python", "Android"]
 };
-
-bio.display = function(){
-    var formattedHeaderName = HTMLheaderName.replace("%data%",bio.name);
-    var formattedHeaderRole = HTMLheaderRole.replace("%data%",bio.role);
+var data = "%data%";
+bio.display = function() {
+    var formattedHeaderName = HTMLheaderName.replace(data, bio.name);
+    var formattedHeaderRole = HTMLheaderRole.replace(data, bio.role);
     $("#header").prepend(formattedHeaderName + formattedHeaderRole);
 
     //Display contact information
     //Contacts are displayed as li in ul
     //TOP
-    var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+    var formattedMobile = HTMLmobile.replace(data, bio.contacts.mobile);
     $("#topContacts").append(formattedMobile);
-    var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
+    var formattedEmail = HTMLemail.replace(data, bio.contacts.email);
     $("#topContacts").append(formattedEmail);
-    var formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
+    var formattedGithub = HTMLgithub.replace(data, bio.contacts.github);
     $("#topContacts").append(formattedGithub);
 
-    var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
+    var formattedLocation = HTMLlocation.replace(data, bio.contacts.location);
     $("#topContacts").append(formattedLocation);
 
     //FOOTER
     $("#footerContacts").append(formattedMobile);
     $("#footerContacts").append(formattedEmail);
 
-    var formattedPic = HTMLbioPic.replace("%data%",bio.biopic);
+    var formattedPic = HTMLbioPic.replace(data, bio.biopic);
     $("#header").append(formattedPic);
 
-    var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage)
+    var formattedWelcomeMsg = HTMLwelcomeMsg.replace(data, bio.welcomeMessage);
     $("#header").append(formattedWelcomeMsg);
 
 
     //Display SKILLS
-    if(bio.skills.length>0){
+    if (bio.skills.length > 0) {
         //Initialize and append header
         $("#header").append(HTMLskillsStart);
 
         for (i = 0; i < bio.skills.length; i++) {
-            var formattedSkill = HTMLskills.replace("%data%",bio.skills[i]);
-        	$("#skills").append(formattedSkill);
+            var formattedSkill = HTMLskills.replace(data, bio.skills[i]);
+            $("#skills").append(formattedSkill);
         }
     }
 
 
-}
+};
 
 
 var work = {
-jobs: [
-    {
-   "employer": "Google Developers Group Lisboa" ,
-   "employerURL": "http://gdglisbon.xyz",
-   "title": "Organizer",
-   "location": "Lisboa, Porutgal",
-   "dates" : "05/2016 - in progress",
-   "description":"-Organization of free workshops, codelabs and courses, open to the entire community. Monthly lectures (“Talks”) about development and tech (GDG Sessions), for developers who are interested in Google Developer technology like Android, App Engine or HTML5. Organization of GDG DevFest Lisbon - a Google tech conference. All about Android, Web and Cloud from the world experts. Responsible for media, sponsors and also for some of the design."
-},
-{
-   "employer": "Rato-ADCC" ,
-   "employerURL": "http://rato-adcc.pt/index.php/pt/rato-adcc/quem-somos",
-   "title": "Voluntary Trainer / President of the supervisory board",
-   "location": "Miratejo, Portugal",
-   "dates" : "05/2013 - in progress",
-   "description":"Teaching computer science in a user’s perspective,Internet and WWW. -Teaching computer science in the program “CLDS Kids”, for disadvantaged children. (Google Docs, Prezi).Tutorship for persons with restricted mobility. This action, developed in the participant's residence, result of a partnership between Rato-ADCC and the Municipal Council of Seixal. Technical work."
-},
-{
-   "employer": " - " ,
-   "employerURL": "http://inesarmadabras.portfoliobox.net",
-   "title": "Freelancer Graphic Designer",
-   "location": "Lisboa, Porutgal",
-   "dates" : "2013 - in progress",
-   "description":"Sporadic contribution in graphic design projects, communication and web design for individuals and small businesses."
-}
-]
+    jobs: [{
+        "employer": "Google Developers Group Lisboa",
+        "employerURL": "http://gdglisbon.xyz",
+        "title": "Organizer",
+        "location": "Lisboa, Porutgal",
+        "dates": "05/2016 - in progress",
+        "description": "-Organization of free workshops, codelabs and courses, open to the entire community. Monthly lectures (“Talks”) about development and tech (GDG Sessions), for developers who are interested in Google Developer technology like Android, App Engine or HTML5. Organization of GDG DevFest Lisbon - a Google tech conference. All about Android, Web and Cloud from the world experts. Responsible for media, sponsors and also for some of the design."
+    }, {
+        "employer": "Rato-ADCC",
+        "employerURL": "http://rato-adcc.pt/index.php/pt/rato-adcc/quem-somos",
+        "title": "Voluntary Trainer / President of the supervisory board",
+        "location": "Miratejo, Portugal",
+        "dates": "05/2013 - in progress",
+        "description": "Teaching computer science in a user’s perspective,Internet and WWW. -Teaching computer science in the program “CLDS Kids”, for disadvantaged children. (Google Docs, Prezi).Tutorship for persons with restricted mobility. This action, developed in the participant's residence, result of a partnership between Rato-ADCC and the Municipal Council of Seixal. Technical work."
+    }, {
+        "employer": "",
+        "employerURL": "http://inesarmadabras.portfoliobox.net",
+        "title": "Freelancer Graphic Designer",
+        "location": "Lisboa, Porutgal",
+        "dates": "2013 - in progress",
+        "description": "Sporadic contribution in graphic design projects, communication and web design for individuals and small businesses."
+    }]
 };
 
-work.display = function()
-{
-    if(work.jobs.length>0)
-    {
+work.display = function() {
+    if (work.jobs.length > 0) {
         for (var job in work.jobs) {
-            if ( work.jobs.hasOwnProperty(job)) {
+            if (work.jobs.hasOwnProperty(job)) {
                 var jobItem = work.jobs[job];
 
                 //Initialize and append header
                 $("#workExperience").append(HTMLworkStart);
 
-                var formattedEmployer = HTMLworkEmployer.replace("%data%",jobItem.employer);
+                var formattedEmployer = HTMLworkEmployer.replace(data, jobItem.employer);
                 //Add employerURL
-                formattedEmployer = formattedEmployer.replace("#",jobItem.employerURL);
+                formattedEmployer = formattedEmployer.replace("#", jobItem.employerURL);
 
-                var formattedTitle = HTMLworkTitle.replace("%data%",jobItem.title);
+                var formattedTitle = HTMLworkTitle.replace(data, jobItem.title);
                 $(".work-entry:last").append(formattedEmployer + formattedTitle);
 
-                var formattedDate = HTMLworkDates.replace("%data%",jobItem.dates);
+                var formattedDate = HTMLworkDates.replace(data, jobItem.dates);
                 $(".work-entry:last").append(formattedDate);
 
-                var formattedLocation = HTMLworkLocation.replace("%data%",jobItem.location);
+                var formattedLocation = HTMLworkLocation.replace(data, jobItem.location);
                 $(".work-entry:last").append(formattedLocation);
 
-                var formattedDescription = HTMLworkDescription.replace("%data%",jobItem.description);
+                var formattedDescription = HTMLworkDescription.replace(data, jobItem.description);
                 $(".work-entry:last").append(formattedDescription);
 
             }
         }
     }
-}
+};
 
 
 
 var projects = {
-    projects: [
-        {
-            "title": "ISELeaks",
-            "dates":"10/2014 - 02/2016",
-            "description":"Local academic newspaper. I was esponsible for the design and promotion on social networks of a small independent academic journal, available in physical and digital support.",
-            "images": ""
-        }
-    ]
+    projects: [{
+        "title": "ISELeaks",
+        "dates": "10/2014 - 02/2016",
+        "description": "Local academic newspaper. I was esponsible for the design and promotion on social networks of a small independent academic journal, available in physical and digital support.",
+        "images": ""
+    }]
 };
 
-projects.display = function(){
-    if(projects.projects.length > 0)
-    {
+projects.display = function() {
+    if (projects.projects.length > 0) {
         for (var prj in projects.projects) {
-                if ( projects.projects.hasOwnProperty(prj)) {
-                    var project = projects.projects[prj];
+            if (projects.projects.hasOwnProperty(prj)) {
+                var project = projects.projects[prj];
 
-                    //Initialize and append header
-                    $("#projects").append(HTMLprojectStart);
+                //Initialize and append header
+                $("#projects").append(HTMLprojectStart);
 
-                    var formattedTitle = HTMLprojectTitle.replace("%data%",project.title);
-                    $(".project-entry:last").append(formattedTitle );
+                var formattedTitle = HTMLprojectTitle.replace(data, project.title);
+                $(".project-entry:last").append(formattedTitle);
 
-                    var formattedDates = HTMLprojectDates.replace("%data%",project.dates);
-                    $(".project-entry:last").append(formattedDates );
+                formattedDates = HTMLprojectDates.replace(data, project.dates);
+                $(".project-entry:last").append(formattedDates);
 
-                    var formattedDescription = HTMLprojectDescription.replace("%data%",project.description);
-                    $(".project-entry:last").append(formattedDescription );
+                var formattedDescription = HTMLprojectDescription.replace(data, project.description);
+                $(".project-entry:last").append(formattedDescription);
 
-                    var formattedImages = HTMLprojectImage.replace("%data%",project.images);
-                    $(".project-entry:last").append(formattedImages );
+                var formattedImages = HTMLprojectImage.replace(data, project.images);
+                $(".project-entry:last").append(formattedImages);
             }
         }
     }
-}
+};
 
 
 var education = {
-    "schools": [
-    {
-        "name":"ISEL - IPL",
-        "location":"Lisboa, Portugal",
+    "schools": [{
+        "name": "ISEL",
+        "location": "Lisboa, Portugal",
         "dates": "2015 - Present",
         "degree": "BsC in Computer Engineering",
-        "url":"http://www.isel.pt"
-    }
-    ],
-    "onlineCourses" : [
+        "url": "http://www.isel.pt"
+    }],
+    "onlineCourses": [
 
-         {
+        {
             "title": "Frontend Nanodegree",
             "school": "Udacity",
-            "dates":"09/2016 - Present",
-            "url":"https://classroom.udacity.com/nanodegrees/nd001"
+            "dates": "09/2016 - Present",
+            "url": "https://classroom.udacity.com/nanodegrees/nd001"
         },
 
         {
             "title": "Javascript Basics",
             "school": "GDG Lisbon / Udacity",
-            "dates":"06/2016",
-            "url":"https://classroom.udacity.com/courses/ud804"
-        },
-        {
+            "dates": "06/2016",
+            "url": "https://classroom.udacity.com/courses/ud804"
+        }, {
             "title": "StudyJams: Android for beginners",
             "school": "GDG / Udacity",
-            "dates":"04/2016",
-            "url":"https://udacity.com/course/android-development-for-beginners--ud837"
-        },
-         {
+            "dates": "04/2016",
+            "url": "https://udacity.com/course/android-development-for-beginners--ud837"
+        }, {
             "title": "Introduction to Java Programming – Part 1",
             "school": "Edx",
-            "dates":"09/2015",
-            "url":"https://www.edx.org/course/introduction-java-programming-part-1-hkustx-comp102-1x-2"
-        },
-        {
-            "title": "An Introduction to Interactive Programming in Python",
-            "school": "Coursera",
-            "dates":"05/2014",
-            "url":"https://pt.coursera.org/learn/interactive-python-1"
-        },
-
-         {
-            "title": "20-hour course in Digital Image Editing (Photoshop + CorelDRAW)",
-            "school": "Rato-ADCC",
-            "dates":"04/2014",
-            "url":"https://rato-adcc.pt"
+            "dates": "09/2015",
+            "url": "https://www.edx.org/course/introduction-java-programming-part-1-hkustx-comp102-1x-2"
         }
     ]
 };
-education.display = function(){
-    if(education.schools.length > 0)
-    {
+education.display = function() {
+    if (education.schools.length > 0) {
         for (var sch in education.schools) {
-                if ( education.schools.hasOwnProperty(sch)) {
-                    var school = education.schools[sch];
+            if (education.schools.hasOwnProperty(sch)) {
+                var school = education.schools[sch];
 
-                    //Initialize and append header
-                    $("#education").append(HTMLschoolStart);
+                $("#education").append(HTMLschoolStart);
 
-                    var formattedName = HTMLschoolName.replace("%data%",school.name);
-                    var formattedDegree = HTMLschoolDegree.replace("%data%",school.degree);
-                    $(".education-entry:last").append(formattedName + formattedDegree);
+                var formattedName = HTMLschoolName.replace(data, school.name).replace("#", school.url);
 
-                    var formattedDates = HTMLschoolDates.replace("%data%",school.dates);
-                    $(".education-entry:last").append(formattedDates);
+                var formattedDegree = HTMLschoolDegree.replace(data, school.degree);
+                $(".education-entry:last").append(formattedName + formattedDegree);
 
-                    var formattedLocation = HTMLschoolLocation.replace("%data%",school.location);
-                    $(".education-entry:last").append(formattedLocation);
+                formattedDates = HTMLschoolDates.replace(data, school.dates);
+                $(".education-entry:last").append(formattedDates);
+
+                var formattedLocation = HTMLschoolLocation.replace(data, school.location);
+                $(".education-entry:last").append(formattedLocation);
 
             }
         }
     }
 
-    if(education.onlineCourses.length > 0)
-    {
-         //Initialize and append header
+    if (education.onlineCourses.length > 0) {
+
         $("#education").append(HTMLonlineClasses);
 
-        for(var onl in education.onlineCourses)
-        {
-            if ( education.onlineCourses.hasOwnProperty(onl)) {
-                    var course = education.onlineCourses[onl];
-                    //Use same as previous block to ensure correct formating
-                    $("#education").append(HTMLschoolStart);
-                    var formattedTitle = HTMLonlineTitle.replace("%data%",course.title);
-                    var formattedSchool = HTMLonlineSchool.replace("%data%",course.school);
-                    $(".education-entry:last").append(formattedTitle + formattedSchool);
+        for (var onl in education.onlineCourses) {
+            if (education.onlineCourses.hasOwnProperty(onl)) {
+                var course = education.onlineCourses[onl];
+                //Use same as previous block to ensure correct formating
+                $("#education").append(HTMLschoolStart);
 
-                    var formattedDates = HTMLonlineDates.replace("%data%",course.dates);
-                    $(".education-entry:last").append(formattedDates);
+                var formattedTitle = HTMLonlineTitle.replace(data, course.title).replace("#",course.url);
+                var formattedSchool = HTMLonlineSchool.replace(data, course.school);
 
-                    var formattedURL = HTMLonlineURL.replace("%data%",course.url);
-                    formattedURL = formattedURL.replace("#",course.url);
-                    $(".education-entry:last").append(formattedURL);
+                $(".education-entry:last").append(formattedTitle + formattedSchool);
 
-                    $(".education-entry:last").append(spacerDiv);
+                formattedDates = HTMLonlineDates.replace(data, course.dates);
+                $(".education-entry:last").append(formattedDates);
+
+                $(".education-entry:last").append(spacerDiv);
             }
 
         }
 
     }
-}
+};
 
-function inName(_name)
-{
-    var iName = _name.trim();
-    iName = iName.split(" ");
-    console.log(iName);
-
-
-    return iName;
-}
 
 //Call the display methods for all the objects
 bio.display();
 work.display();
 projects.display();
 education.display();
-// $("#main").append(internationalizeButton);
-$("#mapDiv"). append(googleMap);
+$("#mapDiv").append(googleMap);

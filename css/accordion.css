@@ -11,23 +11,19 @@ button.accordion {
     color: #999;
     line-height: 29px;
     font-family: "Roboto", sans-serif;
-    clear:both;
+    clear: both;
 }
-
-button.gray{
+button.gray {
     background-color: #eee;
-
 }
-
-button.white{
+button.white {
     background-color: #fff;
-
 }
 /*button.accordion.active, */
+
 button.accordion:hover {
     background-color: #ddd;
 }
-
 button.accordion:after {
     content: '\02795';
     font-size: 13px;
@@ -35,11 +31,9 @@ button.accordion:after {
     float: right;
     margin-left: 5px;
 }
-
 button.accordion.active:after {
     content: "\2796";
 }
-
 div.panel {
     padding: 0 18px;
     background-color: white;
@@ -48,7 +42,6 @@ div.panel {
     transition: 0.6s ease-in-out;
     opacity: 0;
 }
-
 div.panel.show {
     opacity: 1;
     max-height: 500px;
