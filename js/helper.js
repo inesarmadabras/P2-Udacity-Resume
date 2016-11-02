@@ -56,7 +56,7 @@ var HTMLonlineURL = '<br><a href="#" target="_blank">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
-var spacerDiv = '<div>&nbsp;</div>'
+var spacerDiv = '<div>&nbsp;</div>';
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
@@ -83,7 +83,7 @@ function logClicks(x, y) {
 }
 
 $(document).click(function(loc) {
-    logClicks(loc.pageX, loc.pageY)
+    logClicks(loc.pageX, loc.pageY);
 });
 
 
