@@ -1,6 +1,7 @@
 
-#Project: Resume
-##Javascript Basics course - Front-End Nanodegree - Udacity
+#Project: Online Resume - Javascript Basics course
+##Front-End Web Developer Nanodegree - Udacity - [Check the Project Review](https://review.udacity.com/#!/reviews/254660/shared)
+
 
 Browser view
 
