@@ -1,17 +1,16 @@
-//NEED HELP at line 197 :)
 var bio = {
     "name": "Inês Armada Brás",
     "role": "Web - Designer",
     "contacts": {
-        "mobile": "+351 963292070",
+        "mobile": "+351 xxxxxxx",
         "email": "ines.armada.bras@gmail.com",
         "github": "inesarmadabras",
         "twitter": "@InesArmadaBras",
         "location": "Lisbon, Portugal"
     },
-    "welcomeMessage": "This website was made for the Front-End Web Developer Nanodegree from Udacity. Check my real website @ http://inesarmadabras.6te.net",
+    "welcomeMessage": "This is not my real resume. This website was made for the Front-End Web Developer Nanodegree from Udacity. Check my real website @ http://inesarmadabras.6te.net",
     "biopic": "images\\ines.png",
-    "skills": ["HTML5", "CSS", "Javascript", "SQL+PHP", "Java", "Python", "Android"]
+    "skills": ["HTML", "CSS", "Bootstrap 3", "JavaScript", "Knockout.js", "Jasmine", "Web Performance"]
 };
 var data = "%data%";
 bio.display = function() {
@@ -75,8 +74,8 @@ var work = {
         "description": "Teaching computer science in a user’s perspective,Internet and WWW. -Teaching computer science in the program “CLDS Kids”, for disadvantaged children. (Google Docs, Prezi).Tutorship for persons with restricted mobility. This action, developed in the participant's residence, result of a partnership between Rato-ADCC and the Municipal Council of Seixal. Technical work."
     }, {
         "employer": "",
-        "employerURL": "http://inesarmadabras.portfoliobox.net",
-        "title": "Freelancer Graphic Designer",
+        "employerURL": "http://inesarmadabras.github.io",
+        "title": "Freelancer FE & Graphic Designer",
         "location": "Lisboa, Porutgal",
         "dates": "2013 - in progress",
         "description": "Sporadic contribution in graphic design projects, communication and web design for individuals and small businesses."
@@ -119,7 +118,7 @@ var projects = {
     projects: [{
         "title": "ISELeaks",
         "dates": "10/2014 - 02/2016",
-        "description": "Local academic newspaper. I was esponsible for the design and promotion on social networks of a small independent academic journal, available in physical and digital support.",
+        "description": "Local academic newspaper. I was responsible for the design and promotion on social networks of a small independent academic journal, available in physical and digital support.",
         "images": ""
     }]
 };
