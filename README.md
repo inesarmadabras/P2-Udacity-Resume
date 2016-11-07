@@ -2,12 +2,14 @@
 #Project: Online Resume - Javascript Basics course
 ##Front-End Web Developer Nanodegree - Udacity - [Check the Project Review](https://review.udacity.com/#!/reviews/254660/shared)
 
+##How to run?
+Open [inesarmadabras.github.io/P2-Udacity-Resume](https://inesarmadabras.github.io/P2-Udacity-Resume)
 
-Browser view
+###Browser view
 
 ![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img1.png)
 
-Nexus 5X view
+###Nexus 5X view
 
 ![ProjectResult](https://github.com/inesarmadabras/udacityresume.github.io/raw/master/img2.png)
 
