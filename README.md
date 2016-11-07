@@ -2,6 +2,9 @@
 #Project: Online Resume - Javascript Basics course
 ##Front-End Web Developer Nanodegree - Udacity - [Check the Project Review](https://review.udacity.com/#!/reviews/254660/shared)
 
+### Note:
+This is not my real resume. This website was made for the Front-End Web Developer Nanodegree from Udacity. Check my real website @ [inesarmadabras.6te.net](http://inesarmadabras.6te.net) or my portfolio @ [inesarmadabras.github.io](https://inesarmadabras.github.io)
+
 ##How to run?
 Open [inesarmadabras.github.io/P2-Udacity-Resume](https://inesarmadabras.github.io/P2-Udacity-Resume)
 
