@@ -114,3 +114,11 @@ The resume has four distinct sections: work, education, projects and a header wi
  * In helper.js, at the bottom of the file, uncomment code to initialize map and set fitBounds.
 4. All of your code for adding elements to the resume should be within functions. And all of your functions should be encapsulated within the same objects containing your resume data. For instance, your functions for appending work experience elements to the page should be found within the same object containing data about your work experience.
 5. It’s possible to make additional information show up when you click on the pins in the map. Check out line 174 in helper.js and the Google Maps API to get started.
+
+##Updates
+declare `var data = %data%` to avoid use `%data%` all the time
+problem with the `var formattedName` solved
+``` javascript
+var formattedName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
+```
+
