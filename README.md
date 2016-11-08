@@ -116,8 +116,8 @@ The resume has four distinct sections: work, education, projects and a header wi
 5. It’s possible to make additional information show up when you click on the pins in the map. Check out line 174 in helper.js and the Google Maps API to get started.
 
 ##Updates
-declare `var data = %data%` to avoid use `%data%` all the time
-problem with the `var formattedName` solved
+* declare `var data = %data%` to avoid use `%data%` all the time
+* problem with the `var formattedName` solved
 ``` javascript
 var formattedName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
 ```
